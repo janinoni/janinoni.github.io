@@ -3,10 +3,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .tab-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #292929;
+            background-color: #292929;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tab-list li {
+            margin-left: auto;  /* Stick tabs to the right */
+        }
+        .tab-list li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .tab-list li a:hover {
+            background-color: #292929;
+        }
+        .logo {
+            display: inline-block;
+            padding: 14px 16px;
+        }
+        .logo img {
+            vertical-align: middle;
+        }
+        .content-box {
+            border: 1px solid #292929;
+            margin: 20px;
+            padding: 20px;
+            background-color: #292929;
+            border-radius: 25px;
+        }
+        .contact-methods {
+            border: 1px solid #292929;
+            margin: 20px;
+            padding: 20px;
+            background-color: #292929;
+            border-radius: 25px;
+        }
+        .image-container {
+            flex-shrink: 0;     /* Prevent the image from shrinking */
+            margin-right: 10px;     /* Add some margin between the image and content */
+        }
+        .content {
+            flex-grow: 1;   /* Allow the content to grow and take available space */
+        }
+    </style>
 </head>
 <body>
 
-Test
-  
+<ul class="tab-list">
+    <div class="container">
+        <div class="image-container">
+         <img src="media/WebsiteLogo3.png" alt="Logo halt, wilsch stress?">
+        </div>
+        <div class="content">
+    <li><a href="document1.html">Test1</a></li>
+    <li><a href="document2.html">Test2</a></li>
+</ul>
+
+<div class="content-box">
+    <h1>Titel</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+</div>
+
+<div class="contact-methods">
+    <h2>Kontaktmethoden</h2>
+    <p>Discord: IhrDiscordName#1234</p>
+    <p>Email: email@example.com</p>
+</div>
+
 </body>
 </html>
